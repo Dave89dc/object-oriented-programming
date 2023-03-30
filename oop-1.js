@@ -156,3 +156,17 @@ function removeChars(str){
 console.log(removeChars("porcapaletta"));
 
 
+const areaOrPerimeter = function(l , w) {
+    
+    let result = 0; 
+    if (l === w) {
+        result = l*w;
+        return result;
+    };
+
+    result = (l*2)+(w*2);
+    return result;
+    
+};
+
+console.log(areaOrPerimeter(2, 4));
