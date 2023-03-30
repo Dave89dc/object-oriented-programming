@@ -126,3 +126,7 @@ console.log(teacher.findBestStudent());
 // COGNOME: blabla
 // ETà: blabla
 // MEDIA: blabla
+
+
+console.log(teacher.toString());
+console.log(student1.calculateAge());

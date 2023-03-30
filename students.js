@@ -28,14 +28,21 @@ class Student {
 
     toString () {
 
-        
+        return `NOME: ${this.name}
+COGNOME: ${this.surname}
+ETà: ${this.calculateAge()}
+MEDIA VOTI: ${this.calculateMean()}`;
 
     };
 
     calculateAge () {
 
-
+        let date = new Date();
+        let year = date.getFullYear();
+        let age = year - this.yob;
+        return age;
 
     };
 
 };
+

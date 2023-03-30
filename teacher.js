@@ -29,13 +29,19 @@ class Teacher {
 
     toString () {
 
-
+        return `NOME: ${this.name}
+COGNOME: ${this.surname}
+ETà: ${this.calculateAge()}
+MIGLIOR STUDENTE: ${this.findBestStudent().name} ${this.findBestStudent().surname}`;
 
     };
 
     calculateAge () {
 
-
+        let date = new Date();
+        let year = date.getFullYear();
+        let age = year - this.yob;
+        return age;
 
     };
 
