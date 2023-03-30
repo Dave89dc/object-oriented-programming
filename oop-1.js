@@ -141,10 +141,18 @@ let wordsArray = ['hello', 'world', 'this', 'is', 'great'];
 console.log(smash(wordsArray));
 
 
-function removeChar(str){
+function removeChars(str){
     
-    return str.replace(str[0], "").replace(str[str.length-1, ""]);
+    let string = "";
+    for (let i = 1; i < str.length-1; i++) {
+        string += str[i];
+    };        
+
+    return string;
     
 };
 
-console.log(removeChar("porcapaletta"))
+
+console.log(removeChars("porcapaletta"));
+
+
