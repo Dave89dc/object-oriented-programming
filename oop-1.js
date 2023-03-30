@@ -130,3 +130,21 @@ console.log(teacher.findBestStudent());
 
 console.log(teacher.toString());
 console.log(student1.calculateAge());
+
+
+function smash (words) {
+    return words.join(" ");
+};
+
+let wordsArray = ['hello', 'world', 'this', 'is', 'great'];
+
+console.log(smash(wordsArray));
+
+
+function removeChar(str){
+    
+    return str.replace(str[0], "").replace(str[str.length-1, ""]);
+    
+};
+
+console.log(removeChar("porcapaletta"))
