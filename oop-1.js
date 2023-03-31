@@ -90,42 +90,21 @@
 
 // CLASSI!
 
+const vecchietto = new Person ("Battista", "Parodi", 1934);
 
 const student1 = new Student ("Davide", "Consigliere", 1989, [4, 6, 7, 4, 6]);
 const student2 = new Student ("Francesco", "Badile", 1993, [5, 8, 6, 7, 10]);
 const student3 = new Student ("Valentina", "Cherubini", 2001, [8, 7, 10, 9, 8]);
+const student4 = new Student ("Simone", "Maccarone", 2003);
 
 const teacher = new Teacher ("Andrea", "Asioli", 1978, [student1, student2, student3]);
 
 console.log(student1.calculateMean());
 console.log(student2.calculateMean());
 console.log(student3.calculateMean());
+console.log(student4.calculateMean());
 
 console.log(teacher.findBestStudent());
-
-
-// COMPITO:
-
-// Aggiungere ad entrambe le classi la funzione "calculateAge()", in cui
-// tramite l'utilizzo delle date in javaScript calcoli gli anni.
-
-
-// Aggiungere ad entrambe le classi la funzione "calculateAge()", 
-// la quale ritorna una stringa così fatta:
-
-// TEACHER:
-
-// NOME: blabla
-// COGNOME: blabla
-// ETà: blabla
-// MIGLIOR STUDENTE: blabla
-
-// STUDENTS:
-
-// NOME: blabla
-// COGNOME: blabla
-// ETà: blabla
-// MEDIA: blabla
 
 
 console.log(teacher.toString());
@@ -135,6 +114,40 @@ console.log(student1.calculateAge());
 function smash (words) {
     return words.join(" ");
 };
+
+
+student1.yob = 1979;
+console.log(student1.toString());
+
+console.log(student4.toString());
+
+console.log(vecchietto.toString());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ESERCIZI CODEWARS:
+
 
 let wordsArray = ['hello', 'world', 'this', 'is', 'great'];
 
